@@ -1,0 +1,6 @@
+{
+  "name": "SmartAgri – Smart Agriculture & AI Crop Doctor",
+  "description": "Intelligent agriculture platform empowering farmers with AI-powered crop disease detection, smart farming insights, and Telugu multilingual support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

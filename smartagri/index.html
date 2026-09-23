@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartAgri – Smart Agriculture & AI Crop Doctor</title>
+    <meta name="description" content="Intelligent agriculture platform empowering farmers with AI-powered crop disease detection, smart farming insights, and Telugu multilingual support." />
+    <meta property="og:title" content="SmartAgri – Smart Agriculture & AI Crop Doctor" />
+    <meta property="og:description" content="Intelligent agriculture platform empowering farmers with AI-powered crop disease detection, smart farming insights, and Telugu multilingual support." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        try {
+          var mode = localStorage.getItem('smartagri_theme_mode');
+          var legacy = localStorage.getItem('smartagri_theme');
+          var isDark = false;
+          if (mode === 'dark' || legacy === 'dark') {
+            isDark = true;
+          } else if (mode === 'light' || legacy === 'light') {
+            isDark = false;
+          } else {
+            isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          }
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="antialiased selection:bg-emerald-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
